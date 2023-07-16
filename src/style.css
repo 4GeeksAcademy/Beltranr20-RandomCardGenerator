@@ -11,25 +11,6 @@ body {
   padding: 50px;
   border-radius: 15px;
   position: relative;
-
-  &.spades:top-suit,
-  &.spades:bottom-suit {
-    content: "\2660";
-  }
-  &.clubs:top-suit,
-  &.clubs:bottom-suit {
-    content: "\2663";
-  }
-  &.hearts:top-suit,
-  &.hearts:bottom-suit {
-    content: "\2665";
-    color: red;
-  }
-  &.diamonds:top-suit,
-  &.diamonds:bottom-suit {
-    content: "\2666";
-    color: red;
-  }
 }
 
 /* .top-value {

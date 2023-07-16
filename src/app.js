@@ -2,9 +2,6 @@
 
 import "./style.css";
 
-// import "./assets/img/rigo-baby.jpg";
-// import "./assets/img/4geeks.ico";
-
 window.onload = () => {
   var suitRandom = generateRandomSuit();
 
@@ -16,6 +13,14 @@ window.onload = () => {
 
   let suitMiddle = document.querySelector(".numbers");
   suitMiddle.innerHTML = generateRandomNumber();
+
+  if (suitRandom == "♥" || suitRandom == "♦") {
+    document.querySelector(".top-suit").style.color = "red";
+    document.querySelector(".bottom-suit").style.color = "red";
+  } else {
+    document.querySelector(".top-suit").style.color = "black";
+    document.querySelector(".bottom-suit").style.color = "black";
+  }
 
   function generateRandomNumber() {
     let numbers = [
